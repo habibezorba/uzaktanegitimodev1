@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Operatörler</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <div class="logo"></div>
+        <div class="banner">
+            <h2 >BİLGİSAYAR MÜHENDİSLİĞİ</h2>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="index.html">Anasayfa</a> </li>
+                <li><a href="hakkimda.html">Hakkımızda</a> </li>
+                <li><a href="iletisim.html">İletişim</a> 
+            </ul>
+        </div>
+        <div class="sosyal">
+            <a href=""><img src="img/linkedin-icon.png"  width="70px"  height="70px" alt=""></a>
+            <a href=""><img src="img/twitter-icon.png" width="70px"  height="70px" alt=""></a>
+            <a href=""><img src="img/facebook-icon.png" width="70px"  height="70px" alt=""></a>
+         </div>
+         <div class="orta5acıklama">
+            <h2 class="baslık">JavaScript Operatörler</h2>
+            <div>
+                <h4>Matematiksel operatörler</h4>
+                <pre>
+                var a = 5 + 6;	// toplama operatörü
+                var b = 5 - 6;	// çıkarma operatörü
+                var c = 5*6;	// çarpma operatörü
+                var d = 5/6;	// bölme operatörü
+                var e = 5%6;	// mod alma operatörü
+                var f = ++a;	// önden 1 arttırma operatörü, a'nın değerini 1 arttırır, sonra bu değeri f'ye atar.
+                var g = a++;	// sondan 1 arttırma operatörü a'yı g'ye atar, sonra a'nın değerini 1 arttırır.
+                var h = --a;	// önden 1 eksiltme operatörü a'nın değerini 1 eksiltilir, sonra bu değeri h'ye atar.
+                var i = a--;	// sondan 1 eksiltme operatörü a'yı i'ye atar, sonra a'nın değerini 1 eksiltir.
+                </pre>
+                <h4>Atama operatörleri</h4>
+                <pre>
+                var a;
+                a = 0;	// normal atama
+                a += 6;	// toplayarak atama. a = a+6'ya denk.
+                a -= 6;	// çıkararak atama. a = a-6'ya denk.
+                a *= 6;	// çarparak atama. a = a*6'ya denk.
+                a /= 6;	// bölerek atama. a = a/6'ya denk.
+                a %= 6;	// mod alarak atama. a = a%6'ya denk.    
+                </pre>
+                <h4>String operatörleri</h4>
+                <pre>
+                var s="metin1 "+"metin2";	// metinleri yanyana eklemeye yarar.
+                </pre>
+                <p><strong>Not:</strong>NOT: + operatörüyle bir string ve bir sayıyı kullanırsanız sonuç bir string olur ve stringle sayının yanyana getirilmiş hâli üretilir.</p>
+                <h4>Karşılaştırma operatörleri</h4>
+                <pre>
+                var a = 5, b = "5";
+                var c = a == b;	// a ile b'nin değerleri eşit mi? burada c'ye true değeri atanır.
+                c = a === b;	// a ile b'nin değerleri ve türleri aynı mı? c'nin değeri false olur.
+                c = a != b;	// a ile b eşit değil mi?
+                c = a > b;	// a, b'den büyük mü?
+                c = a >= b;	// a, b'den büyük veya b'ye eşit mi?
+                   
+                </pre>
+                <h4>Mantıksal operatörler</h4>
+                <pre>
+                var a = true, b = false;
+                c = a||b;	// a ve b'nin en az birisi true ise true, aksi hâlde false üretir.
+                c =!a;		// a'nın değeri true ise false, false ise true üretir.
+                </pre>
+                <h4>Koşul operatörü</h4>
+                <pre>
+                var a = true;
+                var c = a ? "a true" : "a false";
+                </pre>
+                <p>Bu örnekte a ? "a true" : "a false" ifadesi, a'nın tuttuğu değer true ise a true değerini a'nın tuttuğu değer false ise a false değerini tutar.</p>
+               
+            </div>
+         </div>
+
+    </div>
+    
+</body>
+</html>

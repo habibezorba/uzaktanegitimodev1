@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Giriş</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="logo"></div>
+        <div class="banner">
+            <h2 >BİLGİSAYAR MÜHENDİSLİĞİ</h2>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="index.html">Anasayfa</a> </li>
+                <li><a href="hakkimda.html">Hakkımızda</a> </li>
+                <li><a href="iletisim.html">İletişim</a> 
+            </ul>
+        </div>
+        <div class="sosyal">
+            <a href=""><img src="img/linkedin-icon.png"  width="70px"  height="70px" alt=""></a>
+            <a href=""><img src="img/twitter-icon.png" width="70px"  height="70px" alt=""></a>
+            <a href=""><img src="img/facebook-icon.png" width="70px"  height="70px" alt=""></a>
+         </div>
+         <div class="orta2acıklama">
+            <h2 class="baslık">JavaScript’e Giriş</h2>
+            <p>
+                JavaScript, HTML ve Web'in programlama dilidir.
+            </p>
+            <h3>Neden JavaScript Çalışmalı?</h3>
+            <p>JavaScript, tüm web geliştiricilerinin öğrenmesi gereken 3 dilden biridir :
+                <ol>
+                    <li>HTML web sayfalarının içeriğini tanımlamak için</li>
+                    <li>Web sayfalarının yerleşimini belirlemek için CSS</li>
+                    <li>Web sayfalarının davranışını programlamak için JavaScript</li>
+                </ol>
+            </p>
+            <p> Web sayfaları JavaScript'in kullanıldığı tek yer değildir. Birçok masaüstü ve sunucu programı JavaScript kullanır. Node.js en iyi bilinenidir. </p>
+            <h3>JavaScript Özellikleri:</h3>
+            <p>
+                <ol>
+                    <li>JavaScript HTML İçeriğini Değiştirebilir</li>
+                    <p>Aşağıdaki örnekte getElementById() metodu HTML belgesi içinde kendisine verilen "demo" id'sine sahip elementi bulur ve içeriğini değiştirir. İçerik değiştirme işlemi innerHTML özelliği ile yapılır.</p>
+                    <pre>
+                        document.getElementById("demo").innerHTML = "Merhaba JavaScript";
+                    </pre>
+                    <li>JavaScript ile HTML Stillerini Değiştirebilirsiniz</li>
+                    <p>JavaScript ile HTML elementine ait biçimleri kolaylıkla değiştirebilirsiniz. Aşağıdaki örnekte JavaScript ile font boyutu nasıl değiştirilir bunu göreceksiniz.</p>
+                    <pre>
+                        document.getElementById("demo").style.fontSize = "50px";
+                        veya
+                        document.getElementById('demo').style.fontSize = '50px';
+                    </pre>
+                    
+                    <li>JavaScript HTML Öğelerini Gizleyebilir</li>
+                    <p>JavaScript ile bir HTML belgesindeki herhangi bir HTML elementini gizleyebilirsiniz:</p>
+                    <pre>
+                        document.getElementById("demo").style.display = "none";
+                        veya
+                        document.getElementById('demo').style.display = 'none';
+                    </pre>
+                    <li>JavaScript HTML Öğelerini Gösterebilir</li>
+                    <p>JavaScript ile bir HTML belgesindeki gizlenmiş herhangi bir HTML elementini gösterebilirsiniz:</p>
+                    <pre>
+                        document.getElementById("demo").style.display = "block";
+                        veya
+                        document.getElementById('demo').style.display = 'block';
+                    </pre>
+
+                </ol>
+
+            </p>
+            <h3>JavaScript Nereye Yazılmalı?</h3>
+            <p>HTML'de JavaScript kodları script> ve /script> etiketleri arasına yazılır.</p>
+            <h3>Script Nedir?</h3>
+            <p>
+                Script, basitçe bir amacı yerine getirmek için yazılmış, derlenmesi gerekmeyen, belirli bir dilin komutları kullanılarak oluşturulmuş ifade veya dosyalardır. Bir programlama dili ile uygulama yazdığınızda bu kodun çalışması için derlenmesi gerekir. Derlenme işlemi yazdığınız kodun çalıştırılabilir bir dosyaya çevrilmesi / yazdığınız kodların makina diline çevrilmesidir. Script'i küçük programcıklar olarak düşünebilirsiniz.
+            </p>
+            <h3>  script Etiketi HTML Sayfada Nerede Olmalıdır?</h3>
+            <p> script etiketi HTML sayfada head ya da body etiketi içinde bulunabilir.
+
+                head içinde script etiketinin konumlandırırsanız, kodunuz önce yüklenir. Bu bazen istenen bazen de istenmeyen bir durumdur.</p>
+
+           <p>JavaScript Etiketi html sayfasının içerisinde head alanında , body alanının en alt kısmında veya harici bir sayfada olabilir.</p>
+           <h3>Harici JavaScript Kullanımının Avantajları</h3>
+           <p>
+            
+            JavaScript kodlarını harici bir dosyada tutmak bazı avantajlar sağlar:
+            <ul>
+                <li>HTML ve JavaScript kodları bu sayede birbirine girmez ve ayrışır. Böylelikle kodları yönetmek daha kolay olur.</li>
+                <li>HTML ve JavaScript kodlarını okumak çok daha kolay olur.</li>
+                <li>Bu şekilde oluşturulan harici dosyalar birden fazla HTML dosyasına eklenebilir.</li>
+                <li>Bu dosya üzerinde optimizasyon yaparak sayfa yüklenme hızını arttırabilirsiniz.</li>
+            </ul>
+
+            Harici JavaScript kullanımı en yaygın yöntemdir. 
+            
+            Hangi yöntemi kullanmalıyım derseniz çok az JavaScript kodunuz varsa  <strong>script</strong>  etiketi ile sayfaya ekleyin.
+            
+            JavaScript kodunuz büyükse ve artacaksa harici dosya kullanın.
+            
+            Birden fazla harici JavaScript dosyanız varsa sayfaya şu şekilde ekleyebilirsiniz:
+           </p>
+            
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Değişkenler</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <div class="logo"></div>
+        <div class="banner">
+            <h2 >BİLGİSAYAR MÜHENDİSLİĞİ</h2>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="index.html">Anasayfa</a> </li>
+                <li><a href="hakkimda.html">Hakkımızda</a> </li>
+                <li><a href="iletisim.html">İletişim</a> 
+            </ul>
+        </div>
+        <div class="sosyal">
+            <a href=""><img src="img/linkedin-icon.png"  width="70px"  height="70px" alt=""></a>
+            <a href=""><img src="img/twitter-icon.png" width="70px"  height="70px" alt=""></a>
+            <a href=""><img src="img/facebook-icon.png" width="70px"  height="70px" alt=""></a>
+         </div>
+         <div class="orta4acıklama">
+            <h2 class="baslık">JavaScript Değişkenler</h2>
+            <div>
+            <h4>Değişken(Variable) Nedir?</h4>
+            <p>
+                Programlama dillerinde sıkça verileri bellek yani ramde saklamamız gerekir. Ram işlem yapmak için son derece hızlı bir donanımdır.
+                
+                Bilgisayar belleğini içinde milyonlarca çekmece bulunan bir dolaba benzetebilirsiniz. Bellek, filmlerde gördüğünüz bankalarda üzerinde numaralar olan saklama kasaları gibidir.
+                
+                Biz bu kasalara isim vererek içinde veri sakayabiliriz. Saklanan veri 10,20, 30 gibi sayı olduğu gibi "uzmanim", "akademi" gibi kelime ve metinlerde olabilir.
+                
+                Basitçe, bellek içindeki bir alanın adlandırılmasına ve sizin için ayrılmasına değişken tanımlamak denir. Kasaya verdiğiniz, yani bellek alanına verdiğiniz ad ise değişken olarak adlandırılır. Kasa içinde sakladığınız değerse veri olarak adlandırılır.
+            </p>
+            <pre>
+            Aşağıdaki örnekte sayi1, sayi2 ve toplam birer değişkendir.
+            var sayi1 = 10;
+            var sayi2 = 5;
+            var toplam = sayi1 + sayi2;
+            Yukarıdaki örnekte:
+            sayi1 adında ve içinde 10 değeri saklayan bir değişken oluşturuldu.
+            sayi2 adında ve içinde 5 değeri saklayan bir değişken oluşturuldu.
+            toplam adındaki değişken ise sayi1 ile sayi2 değişkenlerinin toplamlarını değer olarak aldı.
+            </pre>
+            <h4>Değişken Tanımlarken Dikkat Edilmesi Gerekenler</h4>
+            <p>JavaScript programlama dilinde değişken tanımlarken değişken adı benzersiz olmalıdır.
+
+                Yani örneğin bir metod içinde toplam adında bir değişken tanımladıysanız bu adı ikinci kez kullanamazsınız.
+                
+                Bu benzersiz ad tanımlayıcı (identifier) olarak adlandırılır.
+                
+                Tanımlayıcı yani değişken adı a,b,c gibi kısa bir ad olabilir veya daha faza bilgi veren toplamTutar, urunAdi gibi olabilir.
+                
+                Değişken adlandırırken her zaman açıklayıcı adlar vermeye dikkat edin.
+                
+                JavaScript değişken tanımlarken şu kurallara dikkat edilmelidir:
+            <ul>
+                <li>Değişken adladırırken sorun yaşamamak adına Türkçe karakter kullanmayın: İıçşğü gibi. Yani ürünAdı değil, urunAdi şeklinde tanımlama.</li>
+                <li>Değişken adı harf, rakam, alt çizgi, dolar işareti barındırabilir.</li>
+                <li>Değişken adları sayı ile başlayamaz. sayi1 geçerli, 1sayi geçersiz adlandırmadır.</li>
+                <li>Değişken adları $ ve _ ile de başlayabilir. $fiyat veya _fiyat gibi.</li>
+                <li>Değişken isimleri büyük-küçük harf duyarlıdır. Yani fiyat ve Fiyat aynı şey değildir.</li>
+                <li>Rezerve edilmiş anahtar kelimeler değişken adı olarak kullanılamaz: var, function, switch gibi</li>
+            </ul>
+            </p>
+            
+            </div>
+           
+         </div>
+       
+        
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Veri Tipleri</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+    <div>
+        <div class="logo"></div>
+        <div class="banner">
+            <h2 >BİLGİSAYAR MÜHENDİSLİĞİ</h2>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="index.html">Anasayfa</a> </li>
+                <li><a href="hakkimda.html">Hakkımızda</a> </li>
+                <li><a href="iletisim.html">İletişim</a> 
+            </ul>
+        </div>
+        <div class="sosyal">
+            <a href=""><img src="img/linkedin-icon.png"  width="70px"  height="70px" alt=""></a>
+            <a href=""><img src="img/twitter-icon.png" width="70px"  height="70px" alt=""></a>
+            <a href=""><img src="img/facebook-icon.png" width="70px"  height="70px" alt=""></a>
+         </div>
+         <div class="orta7acıklama">
+            <h2 class="baslık">JavaScript Veri Tipleri/Türleri</h2>
+            <div>
+                <h4>Veri Türü Nedir?</h4>
+                <p>Veri Türü Nedir?
+
+                    İnsanlardan farklı olarak bilgisayarlar, 1234 ve abcd arasındaki farkı anlayamazlar. Yani hangisi sayı, hangisi metin bunu ayırt edemezler.
+                    
+                    Veri türü, değişkenler içinde saklanacak verinin türüne göre sınıflandırılmasıdır. Veri türleri her programla dili için oldukça önemli bir kavramdır.
+                    
+                    Bir uygulama geliştirirken değişken içinde saklanan verinin türünü önceden belirtiriz. Böylece bilgisayar verinin saklanacağı bellek alanını buna göre ayırır.
+                </p>
+                <p>JavaScript değişkenleri çok farklı veri türlerini tutabilir. JavaScript programlama dilinde başlıca veri türleri sayı (number), metin(string) ve nesne (object) türleridir.
+                </p>
+                <pre>
+                var agirlik = 25; // sayı
+                var websitesi = "internetteknolojileri.net"; // string
+                var kisi = {ad: "ali", soyad:"veli"}; // nesne
+                </pre>
+                <h4>JavaScript String (Metin)</h4>
+                <p>
+                Bir string harf, sayı gibi karakter bileşenlerinden oluşan türdür.  Örneğin "Ali Veli", "Numara13", "abc" birer string türdür.
+                JavaScript programlama dilinde string veri türü tırnak içinde yazılır. Bu tırnak çift veya tek olabilir:
+                <pre>
+                var websitesi = "internetteknolojileri.net";
+                var websitesi = 'internetteknolojileri.net';
+                </pre>
+                </p>
+                <h4>JavaScript Number (Sayı)</h4>
+                <p>
+                JavaScript programlama dilinde sadece tek tür sayı vardır.
+                Bir değişkene sayılsal değer atanıyorsa bu değer tırnak içinde yazılmaz.
+                Sayılarda ondalık bölüm nokta ile yazılır
+                <pre>
+                var sayi1 = 10;
+                var sayi2 = 9.99;
+                </pre>
+                </p>
+                <h4>JavaScript Boolean (Doğru/Yanlış)</h4>
+                <p>
+                    Boolean veri türü sadece iki değer alır: true (doğru) ve false (yanlış)
+                <pre>
+                var ogrenciMi = true;
+                var aktifMi = false;
+
+                </pre>
+                </p>
+                <h4>JavaScript Object (Nesne)</h4>
+                <p>
+                JavaScript nesneleri süslü parantez {} ile oluşturulur.
+                Nesnenin özellikleri özellik:değer şeklinde virgül ile ayrılılarak yazılır.
+                <pre>
+                var kisi = { ad:"Ali", soyad:"Veli", yas: 40};
+                </pre>
+                </p>
+                <h4>JavaScript Null</h4>
+                <p>
+                JavaScript'te Null hiçbir şeydir.  Null hiç bir değer taşımamasına rağmen türü object yani nesnedir.
+                Null türünü doğrudan kullanmazsınız. Fakat yapılan bazı işlemlerin sonucunda Null değer dönebilir.
+                Örnek olarak, bir veritabanından veri çektiğinizi düşünün. Örneğin numarası 10 olan ögrencinin verilerini çekmek istiyorsunuz.
+                Fakat veritabanında 10 numaralı bir öğrenci yok. İşte bu durumda size dönen değer Null değeridir.
+                <pre>
+                var ogrenci = null; //değer null fakat veri türü object, nesnedir.
+                </pre>
+                </p>
+                <h4>JavaScript undefined</h4>
+                <p>
+                    JavaScript programlama dilinde, bir değişkene değer atanmazsa, bir değişkenin değeri yoksa undefined olarak ifade edilir.
+
+                    JavaScript typeof operatörü değer atanmamış değişkenler için undefined türünü döndürür.
+                <pre>
+                var kişi; //Bu değişkenin değeri undefined'tır, türü undefined'tır.    
+                </pre>
+                </p>
+            </div>
+         </div>
+
+    </div>
+</div>
+    
+</body>
+</html>

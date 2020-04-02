@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript String-Sayılar-Diziler</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+    <div>
+        <div class="logo"></div>
+        <div class="banner">
+            <h2 >BİLGİSAYAR MÜHENDİSLİĞİ</h2>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="index.html">Anasayfa</a> </li>
+                <li><a href="hakkimda.html">Hakkımızda</a> </li>
+                <li><a href="iletisim.html">İletişim</a> 
+            </ul>
+        </div>
+        <div class="sosyal">
+            <a href=""><img src="img/linkedin-icon.png"  width="70px"  height="70px" alt=""></a>
+            <a href=""><img src="img/twitter-icon.png" width="70px"  height="70px" alt=""></a>
+            <a href=""><img src="img/facebook-icon.png" width="70px"  height="70px" alt=""></a>
+         </div>
+         <div class="orta10acıklama">
+            <h2 class="baslık">JavaScript String-Sayı-Dizi-Dizi İşlemleri</h2>
+            <div>
+                <h2>JavaScript String</h2>
+                <p>
+                    JavaScript string veri türü, metinleri saklamak ve üzerinde işlem yapmak için kullanılır.
+                    Bir JavaScript string, basitçe bir grup karakteri saklamaya yarar. "Ali", "Ali Veli", "Bu bir web sitesidir", "sezon11" birer string örnekleridir.
+                    Bir string türündeki bir değişkene değer atarken string ifade tırnak içinde yazılmalıdır.
+                    Bu tırnak işareti tek veya çift olabilir.    
+                </p>
+                
+                <h2>JavaScript String Metodları</h2>
+                <p>String metodları, string türü veriler üzerinde işlem yaparken faydalandığımız metodlardır.
+                Normalde String ilkel bir türdür ve ilke türlerde özellik ve metodlar olmaz. Nesnelerin özellikleri ve metodları olur.                   
+                Fakat JavaScript ilkel değerler için de metod ve özelliklere sahiptir. Çünkü JavaScript ilkel değerleri işlerken bunlara nesne gibi davranır.</p>
+                <ul>
+                    <li>
+                        <h4>String Length (Stringin uzunluğu)</h4>
+                        <p>
+                        String yerleşik olarak bazı özelliklere sahiptir. length bunlardan biridir ve stringin uzunluğunu verir
+                        <pre>
+                        var harfler = "abcde";
+                        var uzunluk = harfler.length;    
+                        </pre>
+                        </p>
+
+                    </li>
+                    <li>
+                        <h4>JavaScript String indexOf() ve lastIndexOf() Metodu</h4>
+                        <p>
+                         Bir string içindeki bir karakterin ya da metnin bir parçasının sıra numarasını (index) bulmak için indexOf metodu kullanılır.indexOf metodu kendine verilen karakteri ya da kelimeyi metnin içinde arar ve bulduğu ilk değerin sıra numarasını verir.
+                        Sıra numarası yani index string işlemlerinde çokca kullanılan bir özelliktir.
+                        <pre>
+                        var metin = "internet teknolojileri ";
+                        var internetIlkIndeks = metin.indexOff("internet");   
+                        </pre>
+                        Metnin içinde kelime aramak için ayrıca search() metodu vardır. Bu metod indexOf ile aynı çalışır ama search() metodu çok daha güçlüdür.
+                        Çok daha fazla parametre alır. Daha fazla seçeneğe sahiptir.
+                        </p>
+                    </li>
+                    <li>
+                        <h4>JavaScript string slice() Metodu</h4>
+                        <p>
+                        slice() metodu string içinden belirli bir bölümü çıkartmaya yarar.JavaScript string slice() metodu iki parametre alır: ilk parametre başlama indeksi, ikinci parametre bitiş indeksidir.Bu iki indeks numarası arasındaki bölüm metnin içinden çıkartılır ve yeni bir string değer olarak döndürülür:
+                        <pre>
+                        var str = "Kavun, Karpuz, Kiraz, Erik";
+                        var sonuc = str.slice(15,20);
+                            
+                        //sonuc = Kiraz
+                        </pre>
+                        Eğer parametre değerlerini negatif verirseniz o zaman parçalama işlemi metnin sonundan başlayacaktır.Aşağıdaki örnekte, işlem sağdan sola 11 karakter ilerleyecek ve kesmeye başlayacaktır. Kesme işlemi yine sağdan indeksi 6 olan karaktere kadar devam edecek ve iki indeks arasında kalan metin alınacaktır.
+                        <pre>
+                        var str = "Kavun, Karpuz, Kiraz, Erik";
+                        var sonuc = str.slice(-11,-6);
+                            
+                        // sonuc = Kiraz
+                        </pre>
+                        </p>
+                    </li>
+                    <li>
+                        <h4>JavaScript string substring() Metodu</h4>
+                        <p>
+                        substring() bir önceki yöntem olan slice() ile benzerdir.İki metod arasındaki fark substring() metodu negatif değer almaz.
+                        <pre>
+                        var str = "Kavun, Karpuz, Kiraz, Erik";
+                        var sonuc = str.substring(7,13);
+
+                        //sonuc = Karpuz
+                        </pre>
+                        </p>
+                    </li>
+                    <li>
+                        <h4>JavaScript string substr() Metodu</h4>
+                        <p>substr() metodu slice() metodu ile benzerdir.
+
+                            İkisi arasındaki fark, substr() metodunun ikinci alacağı parametre çıkartılacak metnin uzunluğunu belirtir.</p>
+                    </li>
+                    <li>
+                        <h4>JavaScript String replace() Metodu</h4>
+                        <p>replace() metodu ile bir metnin içinde arama yapıp, bulduğumuz değerleri yine istediğimiz bir değer ile değiştirebiliriz.
+
+                            Varsayılan olarak JavaScript string replace() metodu, sadece ilk bulduğu değeri değiştirir.</p>
+                    </li>
+                    <li>
+                        <h4>JavaScript ile Metni Büyük Harf veya Küçük Harfe Çevirme (toUpperCase() ve toLowerCase() metodu)</h4>
+                        <p>Eğer bir metni tamamen büyük harfe çevirmek isterseniz JavaScript string toUpperCase() metodunu kullanabilirsiniz.</p>
+                        <p>Eğer bir metni tamamen küçük harfe çevirmek isterseniz JavaScript string toLowerCase() metodunu kullanabilirsiniz:</p>
+                    </li>
+                </ul>
+                <h2>JavaScript Sayılar</h2>
+                <p>Farklı programlama dillerinde farklı sayı türleri vardır. Örneğin C# dilinde int, int16, decimal gibi farklı türler vardır.
+                    16 gibi bir sayıyı tutmak için int türü yeterli olurken, 3.15 gibi küsurlu değerleri tutmak için decimal kullanılır.                    
+                    JavaScript programlama dilinde tek bir sayı türü vardır.
+                    <pre>
+                    var adet = 15; // tam sayı
+                    var fiyat = 3.99; // Küsurlu sayılar. Para gibi.
+                    </pre>
+                    Çok büyük veya çok küçük sayılar bilimsel gösterim ile yazılabilir:
+                    <pre>
+                    var sayi1 = 321e5;    // 32100000
+                    var sayi2 = 312e-5;   // 0.00321
+                    </pre>
+                    JavaScript diğer programlama dillerinden farklı olarak, int, short, long gibi farklı sayı türleri tanımlamaz.
+                    JavaScript sayıları her zaman 64-bit Floating Point (kayan nokta) olarak tutar.
+                </p>
+                <h2>JavaScript Sayı Metodları</h2>
+                <ul>
+                    <li>
+                        <h4>JavaScript toString() Metodu</h4>
+                        <p>
+                        toString() metodu sayıyı stringe çevirir.
+                        Sayıları sadece sayısal işlemlerde kullanırız. Bunun dışında bir string ile sayısı işleyeceksek, sayısal değeri stringe çeviririz.
+                        <pre>
+                        var sayi = 100;
+                        sayi.toString();
+                        </pre>
+                        </p>
+                    </li>
+                    <li>
+                        <h4>JavaScript toFixed() Metodu</h4>
+                        <p>
+                        toFixed() metodu, belirtilen sayıda ondalık değere sahip string döndürür.
+                        Özellikle para gibi değerleri tutan değişkenlerde kullanılır.
+                        <pre>
+                        var sayi = 9.765;
+                        sayi.toFixed(0);           // 10 döndürür. Yukarı ya da aşağı doğru yuvarlar.
+                        sayi.toFixed(2);           // 9.77 döndürür
+                        sayi.toFixed(4);           // 9.7650 döndürür
+                        sayi.toFixed(6);           // 9.765000 döndürür
+                        </pre>
+                        </p>
+                    </li>
+                    <li>
+                        <h4>JavaScript toPrecision() Metodu</h4>
+                        <p>
+                        JavaScript toPrecision() metodu
+                        JavaScript toPrecision(n) metodu uygulanan sayı, parentez içinde verilen değerden daha fazla tam sayı içeriyorsa bilimsel (üstel) gösterim ile döndürür:
+                        <pre>
+                        var sayi = 9.765;
+
+                        sayi.toPrecision(2);          // 9.8 döndürür
+                        sayi.toPrecision(3);          // 9.77 döndürür
+                        sayi.toPrecision(4);          // 9.765 döndürür
+                        </pre>
+                    
+                        </p>
+                    </li>
+                    
+                </ul>
+                <h2>JavaScript Diziler</h2>
+                <h4>Dizi Oluşturmak</h4>
+                <p>
+                    Bir JavaScript Dizisi oluşturmanın en kolay yolu köşeli parantezleri kullanmaktır. 
+                    Yazımı şu şekildedir:
+                    <pre>
+                    var dizi_ismi = [oge1, oge2, ...];
+                    </pre>
+                    
+                </p>
+                <h4>JavaScript "new" Anahtar Kelimesini Kullanmak</h4>
+                <p>
+                    Bu örnek bir dizi oluşturur ve içine değerler atar:
+                    <pre>
+                    var arabalar = new Array("araba1", "araba2", "araba3");
+                    </pre>
+                </p>
+                <h4>Dizinin Elemanlarına Erişme</h4>
+                <p>
+                    Dizi elemanlarına erişmek için dizideki index numaralarını kullanırız.
+                Bu örnek satır arabalar dizisinin ilk elemanına erişir.
+                    <pre>
+                    var isim = arabalar[0];
+                    var arabalar = ["araba1", "araba2", "araba3"];
+                    document.getElementById("demo").innerHTML = arabalar[0];
+                    </pre>
+                </p>
+                <h4>Bütün Diziye Erişmek</h4>
+                <p>
+                    JavaScript ile tüm diziye birden erişmek için sadece dizinin adını kullanmak yeterlidir:
+                    <pre>
+                    var arabalar =["araba1", "araba2", "araba3"];
+                    document.getElementById("demo").innerHTML = arabalar;
+                    </pre>
+                </p>
+                <h2>Dizi Metodları</h2>
+                <ul>
+                    <li>Dizileri String'e Çevirmek:toString() </li>
+                    <li>Pop Metodu :dizideki son elemanı diziden çıkarır:</li>
+                    <li>Push Metodu : dizinin sonuna yeni eleman ekler:</li>
+                    <li>Shift Metodu: Shift metodu da pop metodu gibidir fakat son elemanı değil ilk elemanı diziden çıkarır.
+
+                        Daha sonra da çıkarılan eleman yerine bütün diziyi çıkarılan 0 index numarasına göre tekrar kaydırır.</li>
+                    
+                </ul>
+                
+                
+            </div>
+         </div>
+
+    </div>
+</div>
+    
+</body>
+</html>

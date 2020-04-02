@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Fonksiyonu Yapısı</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+    <div>
+        <div class="logo"></div>
+        <div class="banner">
+            <h2 >BİLGİSAYAR MÜHENDİSLİĞİ</h2>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="index.html">Anasayfa</a> </li>
+                <li><a href="hakkimda.html">Hakkımızda</a> </li>
+                <li><a href="iletisim.html">İletişim</a> 
+            </ul>
+        </div>
+        <div class="sosyal">
+            <a href=""><img src="img/linkedin-icon.png"  width="70px"  height="70px" alt=""></a>
+            <a href=""><img src="img/twitter-icon.png" width="70px"  height="70px" alt=""></a>
+            <a href=""><img src="img/facebook-icon.png" width="70px"  height="70px" alt=""></a>
+         </div>
+         <div class="orta8acıklama">
+            <h2 class="baslık">JavaScript Fonksiyon Yapısı</h2>
+            <div>
+            <p>Bir JavaScript fonksiyonu, özel bir işlemi yerine getirmek için tasarlanmış bir blok koddur.Bir JavaScript fonksiyonu farklı bir kod tarafından çağrıldığı zaman çalışır.</p>
+            <pre>
+            function toplama(sayi1, sayi2) {
+                return sayi1 + sayi2;
+            }
+            </pre>
+            <h4>JavaScript Fonksiyon Sözdizimi</h4>
+            <p>
+                Bir JavaScript fonksiyonu oluşturmak için function anahtar kelimesini kullanırız. Daha sonra bu fonksiyona bir ad veririz.
+                Fonksiyona ad verildikten, parentez açıp kapatılır () ve en sonunda {} parantezleri arasına fonksiyon çağrıldığında çalışacak kod blogunu yazarız.           
+                Fonksiyon adı harf, sayı, alt çizgi ve dolar işaretini barındırabilir.       
+                Fonksiyon eğer parametre alıyorsa fonksiyon adından sonra () parantezleri arasına parametreler girilir: (parametre1, parametre2)   
+                <pre>
+                function fonksiyonAdi(parametre1, parametre2)
+                {
+                //fonksiyon çağrıldığında çalıştırılacak kod bloğu
+                }
+                </pre>
+                Fonksiyon parametreleri, fonksiyon çağrıldığında gönderilecek ve fonksiyon tarafından işlenecek verilerdir.Örneğin, fonksiyona gönderilen iki sayıyı toplayacak bir fonksiyon yazmak istiyorsak, gönderilecek değerler için fonksiyona parametre ekleriz.
+                Fonksiyon bu parametrelere atanan değerleri alır ve kod bloğu içinde bunları işler.
+                Fonksiyon parametreleri {} içinde yerel değişkenler gibi kullanılır.
+            </p>
+            <h4>JavaScript Fonksiyonunu Çalıştırmak / Çağırmak</h4>
+            <p>
+             Oluşturulan JavaScript fonksiyonu özel bir şekilde tanımlanmadıysa kendi başına çalışmaz. Fonksiyonu çalıştırmak için onu çağırmanız gerekir.
+            Bir Fonksiyon şu durumlarda çalışır:
+            <ul>
+                <li>
+                 Bir olay tetiklendiğinde fonksiyon çalıştırılabilir (örneğin kullanıcının bir butona tıklaması bir olaydır)</li>
+                <li>Başka bir JavaScript kodu tarafından fonksiyon çalıştırılabilir.</li>
+                <li>
+                    Otomatik olarak / kendi kendini  çağırarak</li>
+            </ul>
+            </p>
+            <h4>JavaScript Fonksiyonu ile Değer Döndürmek</h4>
+            <p>
+                Bir JavaScript fonksiyonu kendine verilen görevi yerine getirdikten sonra değer döndürebilir.
+                Bazı fonksiyonlar içindeki kod blogunu işler ve görevi sona erer. 
+                Bazı fonksiyonlar da kod blogunu işler ve bu işlemin donunda çağrıldığı noktaya bir değer döndürür.
+            <pre>
+            var sonuc = carpma(4, 3);        // Fonksiyon çağrılıyor ve dönen değer sonuc değişkenine atanıyor
+            function carpma(a, b) {
+            return a * b;                // Fonksiyon iki sayiyi carpar ve sonucu döndürür
+            }
+            </pre>
+            Yukarıdaki örnekte ilk satırda sonuc adında bir değişken tanımlanıyor.
+            Yine aynı satırda carpma(4,3) fonksiyonu çağırılıyor / çalıştırılıyor. Bu fonksiyon iki parametre alıyor: 4,3
+            carpma() fonksiyonu iki sayıyı çarpacak ve çıkan sonucu yani 12 değerini sonuc değişkenine atayacaktır.
+            </p>
+            <h4>Neden Fonksiyon Kullanırız?</h4>
+            <ul>
+                <li>Fonksiyonlar sayesinde yazdığımız kodları tekrar tekrar kullanabiliriz.</li>
+                <li>Aynı kodu tekrar yazmamız gerekmez.</li>
+                <li>Fonksiyonlar uygulamaların daha küçük parçalara bölünmesini sağlar.</li>
+                <li>Böylelikle kod daha anlaşılır hale gelir.</li>
+            </ul>
+            </div>
+         </div>
+
+    </div>
+</div>
+    
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Tip Dönüşümleri</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+    <div>
+        <div class="logo"></div>
+        <div class="banner">
+            <h2 >BİLGİSAYAR MÜHENDİSLİĞİ</h2>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="index.html">Anasayfa</a> </li>
+                <li><a href="hakkimda.html">Hakkımızda</a> </li>
+                <li><a href="iletisim.html">İletişim</a> 
+            </ul>
+        </div>
+        <div class="sosyal">
+            <a href=""><img src="img/linkedin-icon.png"  width="70px"  height="70px" alt=""></a>
+            <a href=""><img src="img/twitter-icon.png" width="70px"  height="70px" alt=""></a>
+            <a href=""><img src="img/facebook-icon.png" width="70px"  height="70px" alt=""></a>
+         </div>
+         <div class="orta13acıklama">
+            <h2 class="baslık">JavaScript Tip Dönüşümleri</h2>
+            <div>
+                <h4>Sayıları Dizelere Dönüştürme</h4>
+                <p>Global yöntem String()sayıları dizelere dönüştürebilir.
+
+                    Herhangi bir sayı, değişmez değer, değişken veya ifadede kullanılabilir:</p>
+                <pre>
+                    String(x)        
+                    String(123)      
+                    String(100 + 23)  
+                </pre>
+                <h4>Booleanları Dizelere Dönüştürme</h4>
+                <p>Global yöntem String()boolean'ları dizelere dönüştürebilir.</p>
+                <pre>
+                String(false)      // returns "false"
+                String(true)       // returns "true"
+                </pre>
+                <h4>Tarihleri ​​Dizelere Dönüştürme</h4>
+                <p>Global yöntem String()tarihleri ​​dizelere dönüştürebilir.</p>
+                <pre>
+                String(Date())  // returns "Thu Jul 17 2014 15:38:19 GMT+0200 (W. Europe Daylight Time)" 
+                </pre>
+                <h4>Dizeleri Sayılara Dönüştürme</h4>
+                <p>Global yöntem Number(), dizeleri sayılara dönüştürebilir.
+
+                    Sayı içeren dizeler ("3.14" gibi) sayılara dönüştürülür (3.14 gibi).
+                    
+                    Boş dizeler 0'a dönüşür.
+                    
+                    Başka bir şey NaN(Sayı Değil) biçimine dönüşür .</p>
+                <pre>
+                Number("3.14")    // returns 3.14
+                Number(" ")       // returns 0
+                Number("")        // returns 0
+                Number("99 88")   // returns NaN
+                </pre>
+                <h4>Booleanları Sayılara Dönüştürme</h4>
+                <p>Global yöntem Number()boolean'ları sayılara dönüştürebilir.</p>
+                <pre>
+                Number(false)     // returns 0
+                Number(true)      // returns 1
+                </pre>
+                <h4>Tarihleri ​​Sayılara Dönüştürme</h4>
+                <p>Genel yöntem Number(), tarihleri ​​sayılara dönüştürmek için kullanılabilir.</p>
+                <pre>
+                d = new Date();
+                Number(d)          // returns 1404568027739
+                </pre>
+                
+            </div>
+         </div>
+
+    </div>
+</div>
+    
+</body>
+</html>
